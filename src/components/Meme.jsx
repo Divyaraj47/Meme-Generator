@@ -14,7 +14,6 @@ function Meme() {
         .then(res => res.json())
         .then(obj => setAllMemes(obj.data.memes))
     }, [])
-    console.log(allMemes.length)
 
     function generateRandomMeme() {
         let memes = allMemes;
